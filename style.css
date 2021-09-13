@@ -1,0 +1,43 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-toggle{
+    all: unset;
+
+    border: 1px solid gray;
+    border-radius: .2rem;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.dropdown .dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 5;
+}
+
+
+.dropdown .dropdown-menu.dropdown-menu-visible{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown .dropdown-menu{
+    padding: 0;
+    margin: -5px 0 0 5px;
+
+    border: 1px solid gray;
+    border-radius: .2rem;
+    background-color: white;
+}
+.dropdown .dropdown-menu .dropdown-item{
+    padding: 5px;
+}
+.dropdown .dropdown-menu .dropdown-item:not(:first-child){
+    border-top: 1px solid gray;
+    
+}
